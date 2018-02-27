@@ -1,0 +1,9 @@
+<h1>Items</h1>
+<p><%= link_to 'New Todo Item', new_item_path %></p>
+<% @items.each do |item| %>
+  <h2><%= item.title %></h2>
+  <%= link_to 'More Info', item_path(item) %>
+  <%= link_to 'Edit Todo', edit_item_path(item) %>
+  <%= link_to 'Delete', item, method: :delete %>
+  
+<% end %>
