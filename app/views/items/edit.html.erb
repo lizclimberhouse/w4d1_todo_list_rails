@@ -1,16 +1,2 @@
 <h1>Edit Item</h1>
-<%= form_for @item do |i| %>
-  <%= i.label :title %>
-  <%= i.text_field :title %>
-  <br>
-  <%= i.label :description %>
-  <%= i.text_area :description %>
-  <br>
-  <%= i.label :dueby %>
-  <%= i.text_field :dueby %>
-  <br>
-  <%= i.label :completed %>
-  <%= i.text_field :completed %>
-  <br>
-  <%= i.submit %>
-<% end %>
+<%= render 'form' %>
